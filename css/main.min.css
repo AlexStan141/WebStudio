@@ -453,4 +453,51 @@
   .characteristic-card {
     width: 270px;
   }
+}
+.what-we-do {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .what-we-do {
+    margin-top: 94px;
+    display: block;
+  }
+  .what-we-do__title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+  .what-we-do__images {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    padding-left: 0px;
+    list-style: none;
+  }
+  .image-container__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    position: relative;
+    bottom: 72px;
+  }
+  .image-container__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }/*# sourceMappingURL=main.min.css.map */
