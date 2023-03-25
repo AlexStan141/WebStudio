@@ -1,0 +1,81 @@
+.hero-section {
+    &__container {
+        background-image: url(../../images/mobile/x1/image16.jpg);
+        background-size: cover;
+        padding: 118px 60px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        &__container {
+            background-image: url(../../images/mobile/x2/image16.jpg);
+        }
+    }
+
+    &__title {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    &__request-button {
+        width: 200px;
+        height: 50px;
+        background: #2196f3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: 0px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.06em;
+        color: #ffffff;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .hero-section {
+        &__container {
+            background-image: url(../../images/tablet/x1/image16.jpg);
+            padding: 118px 204px;
+        }
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            &__container {
+                background-image: url(../../images/tablet/x2/image16.jpg);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-section {
+        &__container {
+            background-image: url(../../images/desktop/x1/image16.jpg);
+            padding: 200px 452px;
+        }
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            &__container {
+                background-image: url(../../images/desktop/x2/image16.jpg);
+            }
+        }
+    }
+}

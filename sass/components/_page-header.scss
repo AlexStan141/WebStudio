@@ -1,0 +1,211 @@
+.page-header {
+    border-bottom: 1px solid #ececec;
+
+    &__container {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.site-logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    text-decoration: none;
+}
+
+.part-of-logo {
+    color: #2196f3;
+}
+
+.header-menu,
+.header-contacts {
+    display: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .page-header__container {
+        justify-content: flex-start;
+        align-items: center;
+        height: 80px;
+    }
+
+    .header-menu {
+        margin-left: 93px;
+        display: flex;
+        gap: 50px;
+        list-style: none;
+        padding-left: 0px; /*Apare un padding-left misterios de 40px.De unde?*/
+    }
+
+    .header-menu__link {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: #212121;
+        text-decoration: none;
+
+        &:hover {
+            color: #2196f3;
+        }
+
+        &--active {
+            color: #2196f3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            &::after {
+                content: "";
+                border-bottom: 4px solid #2196f3;
+                width: 100%;
+                position: absolute;
+                bottom: -34px;
+                border-radius: 2px;
+                left: 0;
+            }
+        }
+    }
+
+    .header-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style: none;
+        padding-left: 0px;
+        margin-left: 114px;
+    }
+
+    .svglink {
+        display: flex;
+        gap: 8px;
+        text-decoration: none;
+        align-items: center;
+        &__svg {
+            fill: #757575;
+            &--phone {
+                width: 10px;
+                height: 14px;
+            }
+            &--email {
+                width: 14px;
+                height: 10px;
+            }
+        }
+        &__info {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.02em;
+            color: #757575;
+        }
+        &:hover &__svg {
+            fill: #2196f3;
+        }
+        &:hover &__info {
+            color: #2196f3;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .page-header__container {
+        justify-content: flex-start;
+        align-items: center;
+        height: 80px;
+    }
+
+    .header-menu {
+        margin-left: 93px;
+        display: flex;
+        gap: 50px;
+        list-style: none;
+        padding-left: 0px; /*Apare un padding-left misterios de 40px.De unde?*/
+    }
+
+    .header-menu__link {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: #212121;
+        text-decoration: none;
+
+        &:hover {
+            color: #2196f3;
+        }
+
+        &--active {
+            color: #2196f3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+
+            &::after {
+                content: "";
+                border-bottom: 4px solid #2196f3;
+                width: 100%;
+                position: absolute;
+                bottom: -34px;
+                border-radius: 2px;
+                left: 0;
+            }
+        }
+    }
+
+    .header-contacts {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        padding-left: 0px;
+        margin-left: 339px;
+    }
+
+    .svglink {
+        display: flex;
+        gap: 8px;
+        text-decoration: none;
+        align-items: center;
+        &__svg {
+            fill: #757575;
+            &--phone {
+                width: 10px;
+                height: 16px;
+            }
+            &--email {
+                width: 16px;
+                height: 12px;
+            }
+        }
+        &__info {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.02em;
+            color: #757575;
+        }
+        &:hover &__svg {
+            fill: #2196f3;
+        }
+        &:hover &__info {
+            color: #2196f3;
+        }
+    }
+}
