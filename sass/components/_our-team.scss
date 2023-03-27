@@ -1,0 +1,135 @@
+@import "../utils/vars";
+
+.our-team {
+    margin-top: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f5f4fa;
+
+    &__title {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+    }
+
+    &__employees-list {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        gap: 30px;
+        padding-left: 0px;
+    }
+}
+
+.employee {
+    &__card {
+        width: 450px;
+        height: 622px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+    &__image {
+        display: block;
+        width: 450px;
+        height: 460px;
+    }
+    &__name {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+    }
+
+    &__role {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #757575;
+    }
+
+    &__social-media-links {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 16px;
+    }
+}
+
+.social-media-container {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background-color: $color5;
+        border-radius: 50%;
+    }
+
+    &__svg-use {
+        fill: $color7;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover &__svg-use {
+        fill: $color4;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .our-team {
+        &__employees-list {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+
+    .employee {
+        &__card {
+            width: 354px;
+            height: 536px;
+        }
+
+        &__image {
+            width: 354px;
+            height: 374px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .our-team {
+        margin-top: 94px;
+        padding-top: 94px;
+        padding-bottom: 94px;
+        &__employees-list {
+            flex-direction: row;
+        }
+    }
+
+    .employee {
+        &__card {
+            width: 270px;
+            height: 428px;
+        }
+
+        &__image {
+            width: 270px;
+            height: 260px;
+        }
+    }
+}
