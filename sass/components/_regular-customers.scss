@@ -1,0 +1,72 @@
+@import "../utils/vars";
+
+.regular-customers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__title {
+        margin-bottom: 30px;
+        font-family: $font2;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: $color2;
+    }
+
+    &__list {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        list-style: none;
+        padding-left: 0px;
+        flex-wrap: wrap;
+    }
+}
+
+.regular-customers-svg-container {
+    width: 210px;
+    height: 92px;
+    border: 1px solid $color7;
+    border-radius: 4px;
+    padding: 13% 32%;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        border: 1px solid $color5;
+    }
+
+    &__svg-use {
+        fill: $color7;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover &__svg-use {
+        fill: $color5;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .regular-customers-svg-container {
+        width: 226px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .regular-customers {
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+        &__title {
+            margin-bottom: 50px;
+            font-size: 36px;
+            line-height: 42px;
+        }
+    }
+
+    .regular-customers-svg-container {
+        width: 170px;
+    }
+}
