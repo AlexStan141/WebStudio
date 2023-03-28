@@ -14,7 +14,7 @@
     width: 450px;
     &__svg-container {
         height: 120px;
-        background: #f5f4fa;
+        background: $color1;
         border-radius: 4px;
         display: flex;
         justify-content: center;
@@ -27,7 +27,7 @@
     }
 
     &__title {
-        font-family: "Roboto";
+        font-family: $font2;
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -35,17 +35,17 @@
         text-align: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: #212121;
+        color: $color2;
     }
 
     &__description {
-        font-family: "Roboto";
+        font-family: $font2;
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
         letter-spacing: 0.03em;
-        color: #757575;
+        color: $color3;
     }
 }
 

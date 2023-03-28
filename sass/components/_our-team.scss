@@ -4,17 +4,17 @@
     margin-top: 60px;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #f5f4fa;
+    background-color: $color1;
 
     &__title {
-        font-family: "Roboto";
+        font-family: $font2;
         font-style: normal;
         font-weight: 700;
         font-size: 28px;
         line-height: 33px;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #212121;
+        color: $color2;
     }
 
     &__employees-list {
@@ -40,25 +40,25 @@
         height: 460px;
     }
     &__name {
-        font-family: "Roboto";
+        font-family: $font2;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #212121;
+        color: $color2;
     }
 
     &__role {
-        font-family: "Roboto";
+        font-family: $font2;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 19px;
         text-align: center;
         letter-spacing: 0.03em;
-        color: #757575;
+        color: $color3;
     }
 
     &__social-media-links {

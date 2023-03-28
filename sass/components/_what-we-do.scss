@@ -8,14 +8,14 @@
         display: block;
 
         &__title {
-            font-family: "Roboto";
+            font-family: $font2;
             font-style: normal;
             font-weight: 700;
             font-size: 36px;
             line-height: 42px;
             text-align: center;
             letter-spacing: 0.03em;
-            color: #212121;
+            color: $color2;
         }
         &__images {
             margin-top: 50px;
@@ -39,14 +39,14 @@
         }
 
         &__title {
-            font-family: "Roboto";
+            font-family: $font2;
             font-weight: 700;
             font-size: 14px;
             line-height: 16px;
             text-align: center;
             letter-spacing: 0.03em;
             text-transform: uppercase;
-            color: #ffffff;
+            color: $color4;
         }
     }
 }
