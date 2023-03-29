@@ -1,0 +1,103 @@
+.filter-buttons-section {
+    margin-top: 60px;
+}
+
+.first-row-filter-buttons,
+.second-row-filter-buttons {
+    display: flex;
+    gap: 8px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.first-row-filter-buttons {
+    margin-bottom: 15px;
+}
+
+.filter-button {
+    height: 38px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    border: 0px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+
+    &:hover {
+        background: #2196f3;
+        color: #ffffff;
+    }
+
+    &--all {
+        width: 64px;
+    }
+
+    &--web-sites {
+        width: 111px;
+    }
+
+    &--apps {
+        width: 83px;
+    }
+
+    &--design {
+        width: 96px;
+    }
+
+    &--marketing {
+        width: 121px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .filter-buttons {
+        &__container {
+            margin: auto;
+        }
+    }
+
+    .first-row-filter-buttons,
+    .second-row-filter-buttons {
+        margin-bottom: 30px;
+    }
+
+    .filter-button {
+        &--web-sites {
+            width: 120px;
+        }
+    }
+
+    .filter-buttons__container {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .filter-buttons-section {
+        margin-top: 94px;
+    }
+
+    .first-row-filter-buttons,
+    .second-row-filter-buttons {
+        margin-bottom: 50px;
+    }
+
+    .filter-button {
+        &--web-sites {
+            width: 120px;
+        }
+    }
+
+    .filter-buttons__container {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+    }
+}
